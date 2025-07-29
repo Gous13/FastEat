@@ -1,0 +1,119 @@
+.chatbot-header-anchor {
+  position: fixed;
+  right: 32px;
+  bottom: 64px;
+  top: auto;
+  left: auto;
+  transform: none;
+  z-index: 2000;
+}
+
+.chatbot-fab {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: orangered;
+  color: #fff;
+  font-size: 2.5rem;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2001;
+  padding: 0;
+}
+
+.chatbot-window {
+  position: fixed;
+  right: 0;
+  bottom: 122px;
+  top: auto;
+  left: auto;
+  transform: none;
+  width: 320px;
+  max-width: 90vw;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  z-index: 2100;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chatbot-header {
+  background: orangered;
+  color: #fff;
+  padding: 12px 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-header button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.chatbot-messages {
+  flex: 1;
+  padding: 12px;
+  background: #fafafa;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.chatbot-msg {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 80%;
+  word-break: break-word;
+}
+
+.chatbot-msg-bot {
+  background: #eee;
+  color: #333;
+  align-self: flex-start;
+}
+
+.chatbot-msg-user {
+  background: #ffecb3;
+  color: #333;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.chatbot-input-row {
+  display: flex;
+  border-top: 1px solid #eee;
+  background: #fff;
+}
+
+.chatbot-input-row input {
+  flex: 1;
+  border: 2px solid orangered;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+  margin: 8px 0 8px 8px;
+  box-sizing: border-box;
+}
+
+.chatbot-input-row button {
+  background: orangered;
+  color: #fff;
+  border: none;
+  padding: 0 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 0 12px 0;
+}

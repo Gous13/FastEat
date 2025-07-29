@@ -1,0 +1,29 @@
+.about-page {
+  padding: 30px 10px;
+  background: #fff8f0;
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  h2 {
+    margin-top: 25px;
+    font-size: 22px;
+    color: #ff6600;
+  }
+
+  p, li {
+    line-height: 1.6;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    li::before {
+      content: "✔️ ";
+      color: #ff6600;
+    }
+  }
+}

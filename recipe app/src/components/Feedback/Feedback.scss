@@ -1,0 +1,71 @@
+@import "../../App.scss";
+
+.sc-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: $clr-orange;
+}
+
+/* ✅ Scroll Row */
+.feedback-row {
+  display: flex;
+  gap: 20px;
+  width: max-content;        /* allow dynamic width */
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  padding: 10px 0;
+}
+
+/* ✅ Feedback Card (Increased Size) */
+.feedback-card {
+  flex: 0 0 280px;          /* 🔥 slightly larger width */
+  background: $clr-white;
+  border-radius: 10px;
+  padding: 20px;            /* 🔥 increased padding */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.08);  /* 🔥 bigger hover effect */
+  }
+
+  h4 {
+    color: $clr-orange;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 8px;
+  }
+
+  span {
+    color: gold;
+    font-size: 1.3rem;
+  }
+}
+
+/* ✅ Animations for Scrolling */
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* ✅ duplicated data allows smooth loop */
+}
+
+@keyframes scrollRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* ✅ Apply Animations */
+.scroll-left {
+  animation: scrollLeft 25s linear infinite;
+}
+
+.scroll-right {
+  animation: scrollRight 25s linear infinite;
+}

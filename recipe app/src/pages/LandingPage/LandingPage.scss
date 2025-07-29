@@ -1,0 +1,140 @@
+// @import "../../App.scss";
+
+// .landing-page {
+//   width: 100%;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// /* ✅ Hero Background */
+// .landing-hero {
+//   background: url("../../assets/images/landing_bg.jpg") center/cover no-repeat;
+//   width: 100%;
+//   height: calc(100vh - 120px);
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   position: relative;
+// }
+
+// .overlay {
+//   background: rgba(0, 0, 0, 0.4);
+//   padding: 40px 60px;
+//   border-radius: 8px;
+//   text-align: center;
+//   color: $clr-white;
+// }
+
+// .hero-title {
+//   font-size: 3rem;
+//   font-weight: 700;
+// }
+
+// .hero-subtitle {
+//   font-size: 1.5rem;
+//   margin-top: 10px;
+// }
+
+// /* ✅ Category Slider */
+// .landing-categories {
+//   background: $clr-white;
+//   padding: 40px 20px;
+//   text-align: center;
+
+//   .section-title {
+//     font-size: 2rem;
+//     font-weight: 700;
+//     margin-bottom: 20px;
+//   }
+
+//   .slider-container {
+//     display: flex;
+//     align-items: center;
+//     position: relative;
+//     width: 90%;
+//     margin: auto;
+//     overflow: hidden;
+//   }
+
+//   /* ✅ Track allows scrolling */
+//   .slider-track {
+//     display: flex;
+//     gap: 20px;
+//     overflow-x: auto;
+//     scroll-behavior: smooth;
+//     scrollbar-width: none;
+//   }
+
+//   .slider-track::-webkit-scrollbar {
+//     display: none;
+//   }
+
+//   .category-card {
+//     min-width: 220px;
+//     background: #fff;
+//     border-radius: 10px;
+//     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px;
+//     overflow: hidden;
+//     text-align: center;
+//     flex-shrink: 0;
+//     transition: transform 0.3s ease;
+
+//     img {
+//       width: 100%;
+//       height: 150px;
+//       object-fit: cover;
+//     }
+
+//     h3 {
+//       padding: 10px;
+//       font-weight: 600;
+//       background: $clr-orange;
+//       color: $clr-white;
+//     }
+
+//     &:hover {
+//       transform: scale(1.05);
+//     }
+//   }
+
+//   /* ✅ Arrow Buttons */
+//   .slider-btn {
+//     background: $clr-orange;
+//     color: white;
+//     border: none;
+//     padding: 10px;
+//     border-radius: 50%;
+//     cursor: pointer;
+//     font-size: 20px;
+//     position: absolute;
+//     top: 40%;
+//     z-index: 10;
+//     transition: 0.3s;
+
+//     &:hover {
+//       background: darken($clr-orange, 10%);
+//     }
+//   }
+
+//   .prev {
+//     left: -10px;
+//   }
+
+//   .next {
+//     right: -10px;
+//   }
+// }
+
+// /* ✅ Feedback Section */
+// .landing-feedback {
+//   background: $clr-white;
+//   padding: 40px 20px;
+//   text-align: center;
+
+//   .feedback-heading {
+//     font-size: 2rem;
+//     font-weight: 700;
+//     margin-bottom: 20px;
+//   }
+// }
